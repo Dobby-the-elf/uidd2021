@@ -1,0 +1,251 @@
+/*base pixel = 2880*1500*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;500&display=swap');
+@font-face{
+    font-family: "Candara";
+    src: url(./res/Candara.ttf);
+}
+
+#alert-block{
+  width: 100vw;
+  height: 2vh;
+  position:absolute;
+  top: 2vh;
+  font-size: 2.5vh;
+  font-weight: medium;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+}
+
+body {
+  color: purple;
+  background: url('./src/background.png') no-repeat top / cover;
+  /*background:linear-gradient(to bottom, #8aa0cb 0%, #ecc0c0 100%);*/
+  background-size: 100% 140%;
+  width: 100vw;
+  height: 140vh;
+  margin: 0;
+  overflow:auto;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+/*
+a{
+  display: inline-block !important;
+  width:0;
+  height:0;
+}
+*/
+.title{
+  width: 100vw;
+  height: 5vh;
+  position:relative;
+  top: 9vh;
+  font-size: 4vh;
+  font-weight: Medium;
+  letter-spacing: 0.2em;/* 200??? */
+  line-height: 1.5;
+  color: #f5f5f3;
+  text-align: center;
+}
+
+#underLine{
+  position:relative;
+  /*margin-left: ;*/
+  margin:0 auto;
+
+  width: 308px;
+  width:45vmin;
+  height: 1px;
+  background:#fff;
+}
+
+.year{
+  padding: 0.5vw 0.5vw;
+  display:flex;
+  flex-wrap: wrap;
+  position:relative;
+  top:14vh;
+  width: 64%;
+  height: 73.8%;
+  margin: 0 auto;
+  /*justify-content: center;*/
+  align-content: space-around;
+}
+
+.month-container{
+  width:22%;
+  height:100%;
+  /*margin-right: 1vw;*/
+}
+
+#mar {
+  /*
+  margin: 30px 13px 0 13px;
+  */
+  display: inline-block;
+  vertical-align: top;/*因為相對於div是塊級元素，span是行級元素，無法定義寬高*/
+  position:relative;
+  padding: 0.5vw 0.5vw 0 0.5vw;
+  /*
+  width:284px;
+  height:310px;*/
+  
+  width:100%;
+  height:100%;
+  
+  background:rgb(230,230,230,0.13);
+  
+  box-shadow: 0 0 1.7px 0 rgba(230, 230, 230, 1), inset  0 0 1.7px 0 rgba(230, 230, 230, 1) ; 
+  
+  border-radius: 0.7vw;
+  color:#000;
+  font-size: 1.3vw;
+  font-weight: medium;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+  color: #f5f5f3;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.month {
+  /*
+  margin: 30px 13px 0 13px;
+  */
+  display: inline-block;
+  vertical-align: top;/*因為相對於div是塊級元素，span是行級元素，無法定義寬高*/
+  position:relative;
+  padding: 0.5vw 0.5vw 0;
+  /*
+  width:284px;
+  height:310px;*/
+  
+  width:22%;
+  height:100%;
+  
+  background:rgb(230,230,230,0.13);
+  
+  box-shadow: 0 0 1.7px 0 rgba(230, 230, 230, 1), inset  0 0 1.7px 0 rgba(230, 230, 230, 1) ; 
+  
+  border-radius: 0.7vw;
+  color:#000;
+  font-size: 1.3vw;
+  font-weight: medium;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+  color: #f5f5f3;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.month:hover{
+  transform:scale(1.1);
+  box-shadow: 5px 5px 3px 0 rgba(130, 130, 130, 0.4), inset  0 0 3.4px 0 rgba(230, 230, 230, 1) ; 
+}
+
+#mar:hover{
+  transform:scale(1.1);
+  box-shadow: 5px 5px 3px 0 rgba(130, 130, 130, 0.4), inset  0 0 3.4px 0 rgba(230, 230, 230, 1) ; 
+}
+
+
+.month .weekTitle{
+  font-size: 62%;
+  font-weight: medium;
+  letter-spacing: 0.5;
+  line-height: 3;
+  color: #634496;
+  text-align: center;
+}
+
+.month .day{
+  margin-right:5px;
+  display: inline-block;
+  vertical-align: top;
+  /*
+  width:35px;
+  height:35px;
+  font-size: 13pt;
+  */
+  
+  width:10.5%;
+  height:12.5%;
+  font-size: 60%;
+  
+  font-weight: medium;
+  letter-spacing: 0.25;
+  line-height: 15px;
+  color: #f5f5f3;
+  text-align: right;
+}
+
+.flex{
+  display: flex;
+  width:100%;
+  position: relative;
+  height:30%;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.flex-no-wrap{
+  flex-wrap: nowrap;
+}
+
+
+@media screen and (max-width: 1300px) {
+  #underLine{
+    width: 45vh;
+  }
+  .year {
+    width: 90%;
+    height:65%;
+  }
+  .month{
+    font-size: 1.3vw;
+  }
+  .month .weekTitle{
+  font-size: 90%;
+  }
+  .month .day{
+    margin-right:2px;
+    width:12%;
+    height:13%;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: url('./src/background.png') no-repeat center / cover;
+    /*background:linear-gradient(to bottom, #8aa0cb 0%, #ecc0c0 100%);*/
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    overflow:auto;
+  }
+  .title{
+    letter-spacing: 0.1em;
+  }
+  #underLine{
+    width: 40vmax;
+  }
+  .year {
+    width: 95%;
+    height: 55%;
+  }
+  .month{
+    font-size: 1.3vw;
+  }
+  .month .weekTitle{
+    font-size: 100%;
+  }
+  .month .day{
+    margin-right:2px;
+    width:11%;
+    height:13%;
+    font-size: 90%;
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebCalender</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>css exercise</title>
+
+        <!-- link to css file -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css">
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;400;500;900&display=swap" rel="stylesheet">
+      
+      <link href="./styles.css" rel="stylesheet" type="text/css">
+    </head>
+  
+    <body>
+        <div class="title"> 2021 CALENDAR 
+          <div id="underLine"></div>
+        </div>
+      <div class="year">
+        <div class='flex flex-no-wrap'><!--style="overflow-x:overflow;-->
+          <div class="month" id="jan">JAN<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN<br></span>
+            <script id='monthCount'>0</script><!--拿來記錄月份的奇怪東西XD-->
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+          <div class="month" id="feb">FEB<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+          
+          <div class="month-container">
+            <a href="./month/index.html" style="text-decoration:none;">
+              <div class="month" id="mar">MAR<br>
+                <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+                <script type="text/javascript" src="app.js"></script>
+              </div>    
+            </a>
+          </div>
+          
+          <div class="month" id="apr">APR<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+        </div>
+        
+        <div  class='flex flex-no-wrap'>
+          <div class="month" id="may">MAY<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN<br></span>
+            <script id='monthCount'>0</script>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+          <div class="month" id="jun">JUN<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+          <div class="month" id="jul">JUL<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+          <div class="month" id="aug">AUG<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+        </div>
+
+        <div class='flex flex-no-wrap'>
+          <div class="month" id="set">SET<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN<br></span>
+            <script id='monthCount'>0</script>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+          <div class="month" id="oct">OCT<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+          <div class="month" id="nov">NOV<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+          <div class="month" id="dec">DEC<br>
+            <span class="weekTitle">MON TUE WED THR FRI SAT SUN</span>
+            <script type="text/javascript" src="app.js"></script>
+          </div>    
+        </div>
+      </div>
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+
+      <div id='alert-block'>若要有較好的 RWD，需在瀏覽器的設定裡面把最小字體調整到 0px</div>
+      <script>$("#alert-block").animate({opacity: "0"},3000);</script>
+      
+  </body>
+</html>
