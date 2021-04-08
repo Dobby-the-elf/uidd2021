@@ -113,11 +113,11 @@ body {
   border-radius: 0.7vw;
   transition: 0.3s;
 }
-
+/*
 .people:hover{
-  transform:scale(1.1) !important;
+  transform:scale(1.1);
 }
-
+*/
 .detail #p1{
   background: url('./src/ａｂｏｕｔ　ｕｓ-09.png') no-repeat top / contain;
 }
