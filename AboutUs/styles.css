@@ -115,7 +115,7 @@ body {
 }
 
 .people:hover{
-  transform:scale(1.1);
+  transform:scale(1.1) !important;
 }
 
 .detail #p1{
@@ -162,7 +162,7 @@ body {
   background-attachment:fixed !important;
   transition: 0.3s;
   
-  z-index:10000;
+  /*z-index:10000;*/
   
   box-shadow: 2px 2px 5px 1px rgba(100, 100, 100, 0.6);
 }
